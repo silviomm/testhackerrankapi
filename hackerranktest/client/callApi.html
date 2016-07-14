@@ -1,0 +1,49 @@
+<template name="callApi">
+
+
+	<h1>HackerRank API</h1>
+
+	<p>POST parameters</p>
+	<ul>
+		<li>source - código para testar</li>
+		<li>lang - id da linguagem(<a href="http://api.hackerrank.com/checker/languages.json">lista de id's</a>)</li>
+		<li>testcases - lista do que pode ser a saída, Ex: ["saida 1", "saida 2"]</li>
+		<li>api_key - key gerada para a aplicação</li>
+	</ul>
+
+	<p>Exemplos:</p>
+	<ul>
+		<li>Em Javascript</li>
+		<ul>
+			<li>No input <b>source</b> : <i>console.log("15")</i></li>
+			<li>No input <b>lang</b> : <i>20</i></li>
+			<li>No input <b>testcases</b> : <i>["15"]</i></li>
+		</ul>
+		<li>Em Python</li>
+		<ul>
+			<li>No input <b>source</b> : <i>print 1</i></li>
+			<li>No input <b>lang</b> : <i>5</i></li>
+			<li>No input <b>testcases</b> : <i>["1"]</i></li>
+		</ul>
+		<li>api_key não é necessária, pois está dentro do server.</li>
+		<li>Resposta alocada no final da página.</li>
+	</ul>
+	<br>
+	<hr>
+	<br>
+	<form>
+		<input type="text" id="source" placeholder="source">
+		<input type="text" id="lang" placeholder="lang">
+		<input type="text" id="testcases" placeholder="testcases">
+		<input type="text" id="api_key" placeholder="api_key" disabled="true">
+		<input type="submit" value="ok">
+	</form>
+
+	<br><br><br>
+
+	<div id="result">
+		
+	</div>
+
+
+</template>
