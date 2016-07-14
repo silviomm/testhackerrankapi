@@ -7,8 +7,7 @@
 
 ##After cloning:
 
-- Change *api_key* in `methods.js`.
-- 
+Change *api_key* in `methods.js`.
 ```
 meteor npm install --save unirest fibers meteor-node-stubs
 ```
